@@ -10,35 +10,41 @@
 </head>
 
 <body class="bgcolor">
-    <ul id="menu">
+    <ul class="tf-1" id="menu">
         <li><a href="index.html">home</a></li>
         <li><a href="https://emojipedia.org/volcano/" target="_blank">for the volcano emoji 🌋</a></li>
     </ul>
-    <h3 class="center ">Contact me!</h3>
+    <h3 class="center tf-1 ">Contact me!</h3>
 
-    <div class="container">
+    <div class="container mb-50 ">
         <div>
-            <form>
+            <form class="container2 tf-1 p-30">
                 <label for="name">name:</label>
-                <input type="text" id="name">
+                <input type="text" id="name" onkeyup="validaName()">
+                <div id="txtName"></div>
+                <br>
 
                 <label for="e-mail">e-mail:</label>
-                <input type="email" id="e-mail">
+                <input type="email" id="e-mail" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
+                <br>
+                <br>
 
                 <label for="info">info:</label>
-                <textarea name="info" id="info" cols="60" rows="30"></textarea>
+                <textarea name="info" id="info" cols="40" rows="10" onkeyup="validaInfo()"></textarea>
+                <div id="txtInfo"></div>
 
-                <button>send</button>
+                <button onclick="enviar()">send</button>
             </form>
         </div>
 
         <div>
-            <h3>Address</h3>
+            <h3 class="center tf-1">Address</h3>
 
-            <iframe
+            <iframe class="p-30"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.4188632253968!2d-46.65742818502245!3d-23.55339538468686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58348e890567%3A0xbcd8d7b0a146a9c5!2sR.%20Augusta%2C%201000%20-%20Cerqueira%20C%C3%A9sar%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001304-001!5e0!3m2!1spt-BR!2sbr!4v1600800267050!5m2!1spt-BR!2sbr"
                 width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
+                tabindex="0" id="map" onmousemove="mapZoom()" onmouseout="mapNormal()"></iframe>
         </div>
 
     </div>
@@ -47,17 +53,23 @@
     <hr>
 
     <footer>
-        <div class="container mb-50">
-            <a href="https://www.linkedin.com/in/casarotif/" target="_blank"><img class="tm-social p-30" src="assets/img/1384014.svg" alt="social1"></a>
+        <div class="container tf-1 mb-50">
+            <a href="https://www.linkedin.com/in/casarotif/" target="_blank"><img class="tm-social p-30"
+                    src="assets/img/1384014.svg" alt="social1"></a>
 
-            <a href="https://github.com/casarotif" target="_blank"><img class="tm-social p-30" src="assets/img/github.svg" alt="social2"></a>
+            <a href="https://github.com/casarotif" target="_blank"><img class="tm-social p-30"
+                    src="assets/img/github.svg" alt="social2"></a>
 
-            <a href="https://twitter.com/casarotif" target="_blank"><img class="tm-social p-30" src="assets/img/1384017.svg" alt="social3"></a>
-            
+            <a href="https://twitter.com/casarotif" target="_blank"><img class="tm-social p-30"
+                    src="assets/img/1384017.svg" alt="social3"></a>
+
         </div>
 
-       <p class="center">Todos os direitos reservados: Fabio Casaroti &copy;</p>
+        <p class="center tf-1">Todos os direitos reservados: Fabio Casaroti &copy;</p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
