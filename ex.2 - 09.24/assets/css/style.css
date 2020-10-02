@@ -1,6 +1,9 @@
 /*My Website Styles - index.html*/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 .tf-1{
     font-family: 'Segoe UI'
@@ -10,14 +13,39 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+.tf-3{
+
+    font-family: 'Source Code Pro', monospace;
+}
+
+.tf-4{
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.tf-5{
+    font-family: 'Orbitron', sans-serif;
+}
 
 .bgcolor{
     background-color: #c9c4c5;
 }
 
+.navbarcolor{
+
+    color: #8008b8
+}
+
 .bgimg{
-    background-image: url(https://i.pinimg.com/564x/a1/73/f4/a173f4c4f4a2cc8350200e57c6132f5c.jpg);
+    background-image: url(https://www.xmple.com/wallpaper/gradient-purple-blue-linear-3840x2160-c2-9400d3-87cefa-a-120-f-14.svg);
     max-width: fit-content;
+    max-height: fit-content;
+    
+}
+
+
+.bgcolor{
+    background-color: #ffffff;
 }
 
 .textcolor1{

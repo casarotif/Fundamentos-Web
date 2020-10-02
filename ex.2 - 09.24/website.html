@@ -17,16 +17,23 @@
     }
 
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
-  </style>
+   html {
+        scroll-behavior: smooth;
+    }
+    </style>
 
   <title>Vaporwave 🌴🌴✨</title>
   <link rel="stylesheet" href="assets/css/style.css">
-</head>
+  
+   
 
+</head>
+<div class="bgcolor">
 <body>
 
+  <div class="container bgimg">
   <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top navbarcolor">
     <a class="navbar-brand tf-2" href="#">VAPORWAVE</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
       aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
@@ -36,10 +43,16 @@
     <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link tf-2" href="#">Home <span class="sr-only">(página atual)</span></a>
+          <a class="nav-link tf-2" href="#home">Home <span class="sr-only">(página atual)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link tf-2" href="#">Link</a>
+          <a class="nav-link tf-2" href="#estilos">Estilos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link tf-2" href="#musica">Música</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link tf-2" href="#contato">Contato</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-dark tf-2" href="#" id="navbarDropdown" role="button"
@@ -57,7 +70,7 @@
 
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2 tf-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <input class="form-control mr-sm-2 tf-2" type="search" placeholder="Digite aqui" aria-label="Pesquisar">
         <button class="btn btn-outline-secondary my-2 my-sm-0 tf-2" type="submit">Pesquisar</button>
       </form>
     </div>
@@ -65,7 +78,7 @@
   <!--/Navbar-->
 
   <!--Carousel-->
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -109,10 +122,10 @@
   <!--/Carousel-->
 
   <!--Jumbotron-->
-  <div class="jumbotron jumbotron-fluid">
+  <div class="jumbotron jumbotron-fluid" id="home">
     <div class="container">
-      <h1 class="display-4">Estilo Vaporwave</h1>
-      <p class="lead">Vaporwave é um gênero musical, um estilo de arte visual e um meme que surgiu no início da década
+      <h1 class="display-4 tf-5 navbarcolor">Estilo Vaporwave</h1>
+      <p class="lead tf-4">Vaporwave é um gênero musical, um estilo de arte visual e um meme que surgiu no início da década
         de 2010 entre algumas comunidades da internet..</p>
     </div>
   </div>
@@ -120,13 +133,13 @@
 
   <!--Cards-->
   <div class="container">
-    <div class="card-columns">
+    <div class="card-columns" id="estilos">
       <div class="card">
         <img class="card-img-top" src="https://i1.sndcdn.com/avatars-000338757900-o3i52p-t500x500.jpg"
           alt="Imagem de capa do card">
         <div class="card-body">
-          <h5 class="card-title">Simsponwave</h5>
-          <p class="card-text">Simpsonwave foi um fenômeno do YouTube popularizado pelo usuário Lucien Hughes. Consiste
+          <h5 class="card-title tf-5">Simsponwave</h5>
+          <p class="card-text tf-5">Simpsonwave foi um fenômeno do YouTube popularizado pelo usuário Lucien Hughes. Consiste
             principalmente em vídeos com cenas da série americana animada de The Simpsons com variadas canções
             steamwave. Os vídeos são muitas vezes editados com efeitos de distorção VHS e filtros de vídeo de coloração
             roxa, dando-lhes uma sensação "alucinatória e transportativa"</p>
@@ -137,8 +150,8 @@
         <img class="card-img-bottom" src="https://miro.medium.com/max/750/1*nCarG_0tMj1qnFgJr4e61Q.png"
           alt="Imagem de capa do card">
         <div class="card-body">
-          <h5 class="card-title">Cibercultura</h5>
-          <p class="card-text">O desenvolvimento da cibercultura se dá com o surgimento da microinformática nos anos 70,
+          <h5 class="card-title tf-5">Cibercultura</h5>
+          <p class="card-text tf-5">O desenvolvimento da cibercultura se dá com o surgimento da microinformática nos anos 70,
             com a convergência tecnológica e o estabelecimento do PC. Nos anos 80-90, assistimos a popularização da
             internet e a transformação do PC em um “computador coletivo”, conectado ao ciberespaço, a substituição do PC
             pelo CC (Lemos 2003). Aqui, a rede é o computador e o computador uma máquina de conexão. A palavra
@@ -166,21 +179,19 @@
 
     <!--Texto e vídeo-->
 
-    <div class="row mt-5 mb-5">
-      <div class="col-md-6">
-        <h3>Vaporwave na Música</h3>
-        <p>Em 2015, a MTV promoveu um rebranding profundamente inspirado pela estética vaporwave e seapunk. Na
+    <div class="row mt-5 mb-5" id="musica">
+      <div class="col-md-6" >
+        <h3 class="tf-4">Vaporwave na Música</h3>
+        <p class="tf-5">Em 2015, a MTV promoveu um rebranding profundamente inspirado pela estética vaporwave e seapunk. Na
           contramão, o Tumblr lançou o Tumblr TV, com um visual vagamente inspirado na MTV no inicio da década de 1990.
         </p>
-        <p>De acordo com o jornalista Jordan Pearson, da Motherboard, o site de tecnologia da revista Vice, esta mudança
+        <p class="tf-5">De acordo com o jornalista Jordan Pearson, da Motherboard, o site de tecnologia da revista Vice, esta mudança
           significaria "a morte do gênero", já que "é nesse lugar (em mídias como a MTV) que o impulso cínico que
           inspirou o vaporwave é ao mesmo tempo assimilado e apagado — onde sua fonte de inspiração nasce e vive."</p>
       </div>
 
       <div class="col-md-6">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/SolEjKrcg4E" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yhCuCqJbOVE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 
@@ -189,8 +200,8 @@
 
     <!--Formulário-->
     <div class="row mb-5">
-      <div class="col-md-12">
-        <h4 class="text-center">Entre em contato</h4>
+      <div class="col-md-12" id="contato">
+        <h4 class="text-center tf-4">Entre em contato</h4>
       </div>
     </div>
 
@@ -198,20 +209,20 @@
       <div class="col-md-6">
         <form>
           <div class="form-group">
-            <label for="exampleFormControlInput1">Endereço de email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+            <label class="tf-2 text-light" for="exampleFormControlInput1">Endereço de email</label>
+            <input type="email" class="form-control tf-2" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
           </div>
 
 
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Exemplo de textarea</label>
+            <label class="tf-2 text-light" for="exampleFormControlTextarea1">Digite aqui</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
         </form>
 
         <div class="form-group d-flex justify-content-end">
           <!-- <---------- PASSAR PRA LATERAL-->
-          <button class="btn btn-outline-success">Enviar</button>
+          <button class="btn btn-outline-light tf-2">Enviar</button>
         </div>
       </div>
 
@@ -224,15 +235,15 @@
     </div>
 
 
-
-
+  
+  </div>
 
 
     <!--/Formulário-->
 
     <!--Footer-->
     <footer>
-      <div class="row mb-3">
+      <div class="row mb-3 mt-3">
         <div class="col-md 12 d-flex justify-content-center">
           <a href="https://www.linkedin.com/in/casarotif/" target="_blank" class="p-3"><img class="tm-social p-30 "
               src="assets/img/1384014.svg" alt="social1"></a>
@@ -247,18 +258,18 @@
 
       <div class="row">
         <div class="col-md-12">
-          <p class="text-center">Todos os direitos reservados: Fabio Casaroti &copy;</p>
+          <p class="text-center tf-5">Todos os direitos reservados: Fabio Casaroti &copy;</p>
         </div>
       </div>
-  </div>
-  </div>
+  
+  
 
 
   </footer>
   <!--/Footer-->
 
-
-
+</div>
+</div>
 
 
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
